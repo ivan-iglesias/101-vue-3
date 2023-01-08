@@ -10,8 +10,8 @@ export default {
 
 
             <!--
-                v-on:submit == @:submit
-                @:submit.prevent = avoid using 'e.preventDefault();' in the function
+                v-on:submit == @submit
+                @submit.prevent = avoid using 'e.preventDefault();' in the function
             -->
             <form @submit.prevent="add">
                 <div class="border border-gray-600 text-black">
