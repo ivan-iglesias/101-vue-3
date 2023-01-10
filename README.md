@@ -6,13 +6,17 @@ To run de example open de index file in a browser. From lesson '1.5 One Vue Comp
 
 ## Cheat Sheet
 
-**Attribute Binding**, we use `v-bind` or the shorthand `:`
+### Attribute Binding
+
+We use `v-bind` or the shorthand `:`
 
 ```html
 <button :class="active ? 'text-red' : 'text-green'">Click Me</button>
 ```
 
-**Event Handling**, we use `v-on` or the shorthand `@`
+### Event Handling
+
+We use `v-on` or the shorthand `@`
 
 ```html
 <button @click="toggle">Click Me</button>
@@ -25,6 +29,8 @@ Another example of event handling is the submission of forms with `@submit`. We 
     ...
 </form>
 ```
+
+### Class Bindings
 
 When **setting class bindings**, we can use strings, arrays or objects
 
@@ -40,6 +46,8 @@ When **setting class bindings**, we can use strings, arrays or objects
     <slot/>
 </button>
 ```
+
+### Parent-Child communitacion
 
 **Parent communicates to the child** through **props**, the **child communicates back to the parent** by emitting an **event**, here is an example of an event:
 
@@ -60,3 +68,19 @@ When we do it in line, we can access the parameter by using this event variable.
 ```html
 <assignment-tags @change="currentTag = $event"/>
 ```
+
+### V-Model
+
+It binds the value and listens for when the value changes
+
+```html
+<input v-model="name"/>
+```
+
+ basically this is the long form of v-model
+
+```html
+<input type="text" :value="name" @input="name = $event.target.value"/>
+```
+
+> With custom components we can uso V model. See the files *AssignmentList.js* and *AssignmentTags.js* in the task `2.2 A Deeper Look at V-Model`.
