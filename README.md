@@ -41,12 +41,22 @@ When **setting class bindings**, we can use strings, arrays or objects
 </button>
 ```
 
-**Parent communicates to the child** through **props**, the **child communicates back to the parent** by emitting an **event**, here is an example of an event
+**Parent communicates to the child** through **props**, the **child communicates back to the parent** by emitting an **event**, here is an example of an event:
+
+The *child* emit the event with
 
 ```js
-// child.js
 this.$emit('event-name', this.newAssignment);
+```
 
-// parent.js
-<assigment-create @event-name="add"></assigment-create>
+The *parent* listens the child's event with
+
+```html
+<assigment-create @event-name="addFunction"></assigment-create>
+```
+
+When we do it in line, we can access the parameter by using this event variable.
+
+```html
+<assignment-tags @change="currentTag = $event"/>
 ```
