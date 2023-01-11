@@ -84,3 +84,17 @@ It binds the value and listens for when the value changes
 ```
 
 > With custom components we can uso V model. See the files *AssignmentList.js* and *AssignmentTags.js* in the task `2.2 A Deeper Look at V-Model`.
+
+### Fake API
+
+In order to create a fake API, we can use [json-server](https://github.com/typicode/json-server). This package allow us to create API responses using json files.
+
+```sh
+# install
+npm i json-server --save-dev
+
+# serve
+npx json-server db.json -p 3001
+```
+
+The file must be located in the root path of the project.

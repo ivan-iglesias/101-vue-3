@@ -15,7 +15,7 @@ export default {
 
     data() {
         return {
-            assigments: [
+            assignments: [
                 { id: 1, name: 'Finish project', complete: false, tag: 'math' },
                 { id: 2, name: 'Read chapter 4', complete: false, tag: 'science' },
                 { id: 3, name: 'Turn in homework', complete: false, tag: 'math' },
@@ -26,18 +26,18 @@ export default {
     computed: {
         filters() {
             return {
-                inProgress: this.assigments.filter(assigment => ! assigment.complete),
-                completed: this.assigments.filter(assigment => assigment.complete)
+                inProgress: this.assignments.filter(assigment => ! assigment.complete),
+                completed: this.assignments.filter(assigment => assigment.complete)
             }
         }
     },
 
     methods: {
         add(name) {
-            this.assigments.push({
+            this.assignments.push({
                 name: name,
                 completed: false,
-                id: this.assigments.length + 1
+                id: this.assignments.length + 1
             });
         }
     }

@@ -25,7 +25,7 @@
         </section>
 
         <section v-show="completedAssigments.length" class="mt-8">
-            <h2 class="font-bold mb-2">Completed Assigments</h2>
+            <h2 class="font-bold mb-2">Completed Assignments</h2>
 
             <ul>
                 <li
@@ -42,7 +42,7 @@
         </section>
 
         <pre class="mt-16">
-            {{ assigments }}
+            {{ assignments }}
         </pre>
     </div>
 
@@ -50,7 +50,7 @@
         let app = {
             data() {
                 return {
-                    assigments: [
+                    assignments: [
                         { id: 1, name: 'Finish project', complete: false },
                         { id: 2, name: 'Read chapter 4', complete: false },
                         { id: 3, name: 'Turn in homework', complete: false },
@@ -60,11 +60,11 @@
 
             computed: {
                 inProgressAssigments() {
-                    return this.assigments.filter(assigment => ! assigment.complete)
+                    return this.assignments.filter(assigment => ! assigment.complete)
                 },
 
                 completedAssigments() {
-                    return this.assigments.filter(assigment => assigment.complete)
+                    return this.assignments.filter(assigment => assigment.complete)
                 }
             }
         };
