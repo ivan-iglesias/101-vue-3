@@ -98,3 +98,18 @@ npx json-server db.json -p 3001
 ```
 
 The file must be located in the root path of the project.
+
+To avoid starting the two serves, we can create an npm command
+
+```json
+{
+  "scripts": {
+    "start": "npx serve & npx json-server db.json -p 3001"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
+}
+```
+
+> Using one `&` symbol means I want the commands to run simultaneosly, if we use two, that would mean let the first command complete and then run the second.
