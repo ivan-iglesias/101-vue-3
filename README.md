@@ -145,3 +145,11 @@ If we need more than one slot, we can use `v-slot:<name>`. We  can use the short
     This is my default content.
 </panel>
 ```
+
+### Vite
+
+Create a new project with [Vite](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
+
+```
+npm init vue@latest
+```
