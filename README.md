@@ -2,7 +2,7 @@
 
 Learning [Vue 3](https://vuejs.org/) with [Laracast videos](https://laracasts.com/series/learn-vue-3-step-by-step).
 
-To run de example open de index file in a browser. From lesson '1.5 One Vue Component Per File' onwards, execute `npx serve` in the terminal. This is necessary due to the use of `<script type="module">`.
+To run de example open de index file in a browser. From lesson '2.2 One Vue Component Per File' onwards, execute `npx serve` in the terminal. This is necessary due to the use of `<script type="module">`.
 
 ## Cheat Sheet
 
@@ -83,7 +83,7 @@ basically this is the long form of v-model
 <input type="text" :value="name" @input="name = $event.target.value"/>
 ```
 
-> With custom components we can uso V model. See the files *AssignmentList.js* and *AssignmentTags.js* in the task `2.2 A Deeper Look at V-Model`.
+> With custom components we can uso V model. See the files *AssignmentList.js* and *AssignmentTags.js* in the task `4.3 A Deeper Look at V-Model`.
 
 ### Fake API
 
