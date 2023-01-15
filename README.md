@@ -77,7 +77,7 @@ It binds the value and listens for when the value changes
 <input v-model="name"/>
 ```
 
- basically this is the long form of v-model
+basically this is the long form of v-model
 
 ```html
 <input type="text" :value="name" @input="name = $event.target.value"/>
@@ -113,3 +113,35 @@ To avoid starting the two serves, we can create an npm command
 ```
 
 > Using one `&` symbol means I want the commands to run simultaneosly, if we use two, that would mean let the first command complete and then run the second.
+
+### Slot
+
+If we need more than one slot, we can use `v-slot:<name>`. We  can use the shorthand `#` instead of `v-slot`.
+
+```html
+<div class="bg-gray-700 p-4 border border-gray-600">
+    <h2 v-if="$slots.heading" class="font-bold">
+        <slot name="heading" />
+    </h2>
+
+    <slot />
+</div>
+```
+
+```html
+<panel>
+    <template v-slot:heading>
+        Hi there
+    </template>
+
+    <!-- use v-slot:default or nothing for default name -->
+
+    <!--
+    <template v-slot:default>
+        This is my default content.
+    </template>
+    -->
+
+    This is my default content.
+</panel>
+```
