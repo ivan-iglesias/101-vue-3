@@ -153,3 +153,27 @@ Create a new project with [Vite](https://vitejs.dev/guide/#scaffolding-your-firs
 ```
 npm init vue@latest
 ```
+
+**Little Confusing Things**
+
+- `@` is an alias of `./src` configured in `vite.config.js`. PHPStorm and VisualCode are not aware of this configuration so we have to create the `jsconfig.json` file.
+
+  ```json
+  {
+    "compilerOptions": {
+      "paths": {
+        "@/*": ["./src/*"]
+      }
+    }
+  }
+  ```
+
+  Example
+
+  ```js
+  import HelloWorld from "@/components/HelloWorld.vue";
+  ```
+
+- `RouterLink` is used to update the dynamic content of the view without refreshing the page. To set the dynamic area use `RouterView`.
+
+- Use the convention `The` for the components that are going to be used one time throuhout the entire project. A component name can be `TheWelcome.vue`.
