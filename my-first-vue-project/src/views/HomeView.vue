@@ -6,6 +6,7 @@ let { flash } = useFlash();
 
 <template>
   <main>
+    <h1>Flash With Composables</h1>
     <p>
         <button @click="flash('Test', 'It Works!', 'info')">Click Me</button>
     </p>

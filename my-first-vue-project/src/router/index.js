@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ContactView from "../views/ContactView.vue";
+import LocalStorageView from "../views/LocalStorageView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,7 +23,12 @@ const router = createRouter({
         path: "/contact",
         name: "contact",
         component: ContactView,
-      },
+    },
+    {
+        path: "/local-storage",
+        name: "local-storage",
+        component: LocalStorageView,
+    },
   ],
 });
 
