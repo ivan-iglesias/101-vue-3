@@ -3,6 +3,7 @@ import HomeView from "@/views/HomeView.vue";
 import ContactView from "@/views/ContactView.vue";
 import LocalStorageView from "@/views/LocalStorageView.vue";
 import PropsEmitsView from "@/views/PropsEmitsView.vue"
+import DependencyInjectionView from "@/views/DependencyInjectionView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,7 +35,12 @@ const router = createRouter({
         path: "/props-emits",
         name: "props-emits",
         component: PropsEmitsView,
-    }
+    },
+    {
+        path: "/dependency-injection",
+        name: "dependency-injection",
+        component: DependencyInjectionView,
+    },
   ],
 });
 

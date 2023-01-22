@@ -22,6 +22,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <RouterLink to="/contact">Contact</RouterLink>
         <RouterLink to="/local-storage">Local Storage</RouterLink>
         <RouterLink to="/props-emits">Props Emits</RouterLink>
+        <RouterLink to="/dependency-injection">Dependency Injection</RouterLink>
       </nav>
     </div>
   </header>

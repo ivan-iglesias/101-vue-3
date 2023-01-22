@@ -26,5 +26,5 @@ function onKeyUp(e) {
     <textarea
         @keydown.tab.prevent="onTabPress"
         @keyup="onKeyUp"
-        v-text="modelValue" ></textarea>
+        v-text="modelValue" />
 </template>
