@@ -10,7 +10,7 @@ const environment = inject('environment')
 </script>
 
 <template>
-    <p>{{ userName }} working in {{ environment  }} environment.</p>
+    <p>{{ userName }} is working in {{ environment }} environment.</p>
 
     <button @click="changeName">Change Name</button>
 </template>

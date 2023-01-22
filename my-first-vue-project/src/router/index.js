@@ -4,6 +4,7 @@ import ContactView from "@/views/ContactView.vue";
 import LocalStorageView from "@/views/LocalStorageView.vue";
 import PropsEmitsView from "@/views/PropsEmitsView.vue"
 import DependencyInjectionView from "@/views/DependencyInjectionView.vue"
+import ExternalFileView from "@/views/ExternalFileView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,24 +23,29 @@ const router = createRouter({
       component: () => import("../views/AboutView.vue"),
     },
     {
-        path: "/contact",
-        name: "contact",
-        component: ContactView,
+      path: "/contact",
+      name: "contact",
+      component: ContactView,
     },
     {
-        path: "/local-storage",
-        name: "local-storage",
-        component: LocalStorageView,
+      path: "/local-storage",
+      name: "local-storage",
+      component: LocalStorageView,
     },
     {
-        path: "/props-emits",
-        name: "props-emits",
-        component: PropsEmitsView,
+      path: "/props-emits",
+      name: "props-emits",
+      component: PropsEmitsView,
     },
     {
-        path: "/dependency-injection",
-        name: "dependency-injection",
-        component: DependencyInjectionView,
+      path: "/dependency-injection",
+      name: "dependency-injection",
+      component: DependencyInjectionView,
+    },
+    {
+      path: "/external-file",
+      name: "external-file",
+      component: ExternalFileView,
     },
   ],
 });

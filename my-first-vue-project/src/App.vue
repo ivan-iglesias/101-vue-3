@@ -23,6 +23,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <RouterLink to="/local-storage">Local Storage</RouterLink>
         <RouterLink to="/props-emits">Props Emits</RouterLink>
         <RouterLink to="/dependency-injection">Dependency Injection</RouterLink>
+        <RouterLink to="/external-file">External File</RouterLink>
       </nav>
     </div>
   </header>
