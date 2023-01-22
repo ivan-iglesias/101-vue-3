@@ -21,6 +21,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
         <RouterLink to="/local-storage">Local Storage</RouterLink>
+        <RouterLink to="/refactor-props-emits">Refactor Props Emits</RouterLink>
       </nav>
     </div>
   </header>

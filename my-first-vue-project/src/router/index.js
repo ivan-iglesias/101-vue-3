@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import ContactView from "../views/ContactView.vue";
-import LocalStorageView from "../views/LocalStorageView.vue";
+import HomeView from "@/views/HomeView.vue";
+import ContactView from "@/views/ContactView.vue";
+import LocalStorageView from "@/views/LocalStorageView.vue";
+import RefactorDefinePropsEmits from "@/views/RefactorDefinePropsEmits.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,6 +29,11 @@ const router = createRouter({
         path: "/local-storage",
         name: "local-storage",
         component: LocalStorageView,
+    },
+    {
+        path: "/refactor-props-emits",
+        name: "refactor-props-emits",
+        component: RefactorDefinePropsEmits,
     },
   ],
 });
