@@ -24,6 +24,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <RouterLink to="/props-emits">Props Emits</RouterLink>
         <RouterLink to="/dependency-injection">Dependency Injection</RouterLink>
         <RouterLink to="/external-file">External File</RouterLink>
+        <RouterLink to="/mutation">Mutation</RouterLink>
       </nav>
     </div>
   </header>

@@ -5,6 +5,7 @@ import LocalStorageView from "@/views/LocalStorageView.vue";
 import PropsEmitsView from "@/views/PropsEmitsView.vue"
 import DependencyInjectionView from "@/views/DependencyInjectionView.vue"
 import ExternalFileView from "@/views/ExternalFileView.vue"
+import MutationView from "@/views/MutationView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -46,6 +47,11 @@ const router = createRouter({
       path: "/external-file",
       name: "external-file",
       component: ExternalFileView,
+    },
+    {
+      path: "/mutation",
+      name: "mutation",
+      component: MutationView,
     },
   ],
 });
