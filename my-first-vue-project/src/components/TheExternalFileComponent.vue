@@ -1,5 +1,5 @@
 <script setup>
-import { currentCity } from '@/cities/cities';
+import { currentCity } from '@/store/cityStore';
 </script>
 
 <template>

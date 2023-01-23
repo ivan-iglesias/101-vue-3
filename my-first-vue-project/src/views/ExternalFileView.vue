@@ -1,5 +1,5 @@
 <script setup>
-    import { currentCity } from "@/cities/cities";
+    import { currentCity } from "@/store/cityStore";
     import TheExternalFileComponent from "@/components/TheExternalFileComponent.vue";
 </script>
 
