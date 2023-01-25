@@ -1,4 +1,3 @@
-
 # Options API and Composition API
 
 Vue components can be written with two different styles: Options API and Composition API.

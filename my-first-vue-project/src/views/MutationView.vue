@@ -1,5 +1,5 @@
 <script setup>
-import { counter } from "@/stores/counterStore";
+import { counter } from "@/stores/CounterStore";
 </script>
 
 <template>

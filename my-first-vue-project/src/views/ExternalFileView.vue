@@ -1,6 +1,6 @@
 <script setup>
-import { currentCity } from "@/stores/cityStore";
-import { counter } from "@/stores/counterStore";
+import { currentCity } from "@/stores/CityStore";
+import { counter } from "@/stores/CounterStore";
 import TheExternalFileComponent from "@/components/TheExternalFileComponent.vue";
 </script>
 

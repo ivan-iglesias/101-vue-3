@@ -25,6 +25,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <RouterLink to="/dependency-injection">Dependency Injection</RouterLink>
         <RouterLink to="/external-file">External File</RouterLink>
         <RouterLink to="/mutation">Mutation</RouterLink>
+        <RouterLink to="/pinia">Pinia</RouterLink>
       </nav>
     </div>
   </header>
