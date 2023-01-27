@@ -2,14 +2,20 @@
     <div class="contact">
       <h1>This is a contact page</h1>
     </div>
-  </template>
+</template>
 
-  <style>
-  @media (min-width: 1024px) {
-    .contact {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
+<style>
+@media (min-width: 1024px) {
+  .contact {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
   }
-  </style>
+}
+</style>
+
+<script setup>
+import team from "@/team.json";
+
+console.log(team);
+</script>
