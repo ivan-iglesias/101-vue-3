@@ -26,6 +26,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <RouterLink to="/external-file">External File</RouterLink>
         <RouterLink to="/mutation">Mutation</RouterLink>
         <RouterLink to="/pinia">Pinia</RouterLink>
+        <RouterLink to="/modal">Modal</RouterLink>
       </nav>
     </div>
   </header>

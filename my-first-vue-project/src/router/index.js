@@ -7,6 +7,7 @@ import DependencyInjectionView from "@/views/DependencyInjectionView.vue"
 import ExternalFileView from "@/views/ExternalFileView.vue"
 import MutationView from "@/views/MutationView.vue";
 import PiniaView from "@/views/PiniaView.vue";
+import ModalView from "@/views/ModalView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -58,6 +59,11 @@ const router = createRouter({
       path: "/pinia",
       name: "pinia",
       component: PiniaView,
+    },
+    {
+      path: "/modal",
+      name: "modal",
+      component: ModalView,
     }
   ],
 });
