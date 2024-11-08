@@ -1,6 +1,14 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "@/components/HelloWorld.vue";
+
+console.log(import.meta.env.VITE_API_URL);
+console.log(import.meta.env.MODE);
+console.log(import.meta.env.BASE_URL);
+console.log(import.meta.env.PROD);
+console.log(import.meta.env.DEV);
+console.log(import.meta.env.SSR);
+
 </script>
 
 <template>
